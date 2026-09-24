@@ -29,6 +29,7 @@ select COUNT(*) from cinema_sales_clean  where capacity <0; --ok
 select COUNT(*) from cinema_sales_clean  where ticket_use <0; --ok
 
 select COUNT(*) from cinema_sales_clean where occu_perc <0 or occu_perc >100;
-
+select COUNT(*) from cinema_sales_clean where tickets_out >0; --6060
+select ROUND((SUM(tickets_out)*100.0/SUM(tickets_sold)),2) from cinema_sales_clean; -- 0,15% di biglietti venduti,è un dato trascurabile epr le domande future di business
 --dati sistemati
 
