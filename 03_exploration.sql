@@ -34,6 +34,40 @@ from cinema_sales;
 --125 null occu_perc e capacity,probabilmente le stesse righe in quanto capacity è calcolata da occu_perc (assunzione)
 
 --controllo duplicati
-select (film_code , cinema_code, date) as chiave_primaria from cinema_sales
+select  (film_code , cinema_code, date) as chiave_primaria from cinema_sales
 group by chiave_primaria
 having COUNT(*)>1;
+
+--controllo se i 125 null di capacity e occu_perc sono nelle stesse righe
+select COUNT(*) from cinema_sales where occu_perc is null or capacity is null;
+.-- sono 125 quindi SI
+
+--controllo che i valori tornino
+-- ticket use=ticket_sold - ticket_out
+select ticket_use, (tickets_sold - tickets_out) as check_ticket_use 
+from cinema_sales where ticket_use != (tickets_sold - tickets_out) ;
+--tutte le righe hanno valori corretti in ticket_use
+
+--controllo anche ticket_price;dovrebbe essere total_sales/ticket_price
+
+select ticket_price, (total_sales/tickets_sold) as check_ from cinema_sales
+where ticket_price != (total_sales/tickets_sold) ;
+--valori corretti
+
+--controllo valori anomali
+--occu_perc <0 o >100
+select COUNT(*) as occu_perc_invalid from cinema_sales where occu_perc>100 or occu_perc <0;
+--capacity negativa
+select COUNT(*) from cinema_sales where  capacity<0; --nota_sono tutti -2
+select COUNT(*) from cinema_sales where  ticket_use <0; --61
+select COUNT(*) from cinema_sales where  tickets_out<0;
+
+--i 106 duplicati sono identici?
+SELECT 
+    COUNT(*) -
+    (SELECT COUNT(*)
+     FROM (SELECT DISTINCT * FROM cinema_sales) t) AS distinct_tot
+FROM cinema_sales;
+-- i duplicati sono righe identiche
+
+
