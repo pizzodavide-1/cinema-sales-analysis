@@ -1,0 +1,2 @@
+--andamento settimanale
+--tot biglietti venduti e incassi per ogni settimana
