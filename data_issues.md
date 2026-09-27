@@ -12,3 +12,11 @@ NOTE/ASSUNZIONI:
 Il dataset dovrebbe provenire dall'Iran,per questo ci sono valori cosi elevati ai prezzi,basati su una specifica valuta;
 la capacity sembra essere una colonna calcolata dal rapporto tra biglietti venduti e occupazione
 1 riga= 1 film in 1 saka in 1 giorno
+
+Giorni mancanti
+Mancano 23 giorni: il 22 febbraio, dal 24 febbraio al 13 marzo, il 4 e il 6 giugno, il 19 e il 20 settembre.
+Di conseguenza le settimane del 26 febbraio e del 5 marzo sono assenti del tutto, e altre quattro settimane sono incomplete.
+
+Ipotesi (non verificabili con i dati disponibili):
+- 4 e 6 giugno, 19 e 20 settembre: probabili chiusure in corrispondenza di ricorrenze religiose del calendario iraniano (Ramadan, Tasua e Ashura).
+- 24 febbraio – 13 marzo: probabile interruzione nella raccolta dei dati.
