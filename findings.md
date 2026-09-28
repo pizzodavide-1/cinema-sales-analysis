@@ -30,3 +30,17 @@ Interpretazione (ipotesi)
 Limiti
 - Non è possibile stabilire quanta parte del pubblico del martedì sia pubblico nuovo e quanta si sia solo spostata da altri giorni: l'effetto reale della promozione potrebbe essere inferiore a quello osservato.
 
+Media giornaliera per mese 
+
+- Aprile è il mese più forte (circa 138.000 biglietti al giorno).
+- Marzo è secondo (circa 100.000), ma i dati coprono solo gli ultimi 18 giorni (coincidenti con la festa già citata sopra): il valore è probabilmente sovrastimato rispetto al mese intero.
+- Maggio, luglio e agosto sono su livelli simili (circa 92.000–98.000 al giorno),ma con tutti i giorni presenti,quindi sono da considerare migliori rispetto a Marzo
+- Giugno e settembre sono i mesi più deboli (circa 45.000 e 38.000), meno di un terzo di aprile.
+- Il prezzo medio del biglietto varia di circa il 25% nel corso dei mesi
+
+Interpretazione (ipotesi)
+Il quadro mensile conferma quello settimanale: i mesi più deboli coincidono con il Ramadan (giugno) e con il periodo di altre ricorrenze religiose (settembre).
+Limiti
+- Febbraio (2 giorni, circa 135 biglietti al giorno) è escluso dai confronti: il dato non è rappresentativo e riflette probabilmente l'avvio della raccolta dati.
+- Novembre (4 giorni) stesso discorso
+- La variazione del prezzo medio non viene interpretata per ora.

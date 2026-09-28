@@ -35,3 +35,21 @@ SUM(revenue)*1.0/SUM(tickets) as prezzo_medio_biglietto
 from daily_totals
 group by day_num,day_name
 order by day_num;
+
+--vendite medie per ogni mese
+WITH daily_totals AS (
+    SELECT
+        date,
+        SUM(tickets_sold) AS tickets,
+        SUM(total_sales)  AS revenue
+    FROM cinema_sales_clean
+    GROUP BY date
+)
+select DATE_TRUNC('month', date)::date as month_start,
+COUNT(*) as days_count,
+ROUND(AVG(tickets),2) as avg_daily_tickets,
+ROUND(AVG(revenue),2) as avg_daily_revenue,
+ROUND(SUM(revenue)*1.0/SUM(tickets),2) as prezzo_medio_biglietto
+from daily_totals
+group by month_start
+order by month_start;
