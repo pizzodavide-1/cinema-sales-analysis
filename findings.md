@@ -44,3 +44,16 @@ Limiti
 - Febbraio (2 giorni, circa 135 biglietti al giorno) è escluso dai confronti: il dato non è rappresentativo e riflette probabilmente l'avvio della raccolta dati.
 - Novembre (4 giorni) stesso discorso
 - La variazione del prezzo medio non viene interpretata per ora.
+
+Concentrazione degli incassi
+
+- Il cinema 448 genera da solo il 12,2% dell'incasso totale, più del doppio del secondo (5,8%).
+- I primi 10 cinema per incassi (4% dei cinema) generano il 41% dell'incasso; i primi 16 (6,5%) superano il 50%; i primi 54 (22%) arrivano all'80%: la distribuzione segue la regola dell'80/20, cioè il 20% dei cinema genera l'80% degli incassi della catena del cinema.
+- La metà meno redditizia dei cinema (123) genera circa il 4,5% dell'incasso totale.
+
+Interpretazione
+- Il business è fortemente concentrato: la catena dipende da un numero ridotto di cinema, e in particolare dal 448. Questo rappresenta un rischio da monitorare.
+- I cinema della coda andrebbero valutati incrociando gli incassi con i costi di gestione, non disponibili in questo dataset: un incasso basso non implica necessariamente una perdita.
+Limiti
+- Il dataset non contiene costi: non è possibile valutare la redditività dei singoli cinema, ma solo il loro contributo agli incassi.
+- Alcuni cinema sono presenti solo per una parte del periodo; il loro contributo è sottostimato rispetto a un periodo completo.
