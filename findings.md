@@ -100,3 +100,27 @@ Metriche: incasso medio giornaliero e occupazione ponderata. Confine tra "alto" 
 ### Limiti
 - La mediana è un confine arbitrario: i cinema vicini al confine (es. 266 e 51, occupazione intorno all'11%) non sono sostanzialmente diversi da quelli appena oltre. Le priorità vanno date ai cinema lontani dal confine.
 - L'occupazione dipende da `capacity`, colonna non del tutto affidabile.
+
+##  Il prezzo del biglietto influenza il riempimento delle sale?
+
+| Fascia | Prezzo medio | Occupazione media | Occupazione mediana |
+|--------|--------------|-------------------|---------------------|
+| 1 (più economica) | circa 41.000 | 11,0% | 9,8% |
+| 2 | circa 54.000 | 11,5% | 8,1% |
+| 3 | circa 65.000 | 14,1% | 10,4% |
+| 4 (più cara) | circa 96.000 | 22,6% | 20,4% |
+
+- Correlazione tra prezzo medio e occupazione: +0,48 (relazione positiva moderata).
+- La relazione non è graduale: le fasce 1-3 hanno occupazioni simili, mentre il quarto di cinema più cari ha un'occupazione circa doppia rispetto agli altri.
+
+### Interpretazione
+- Confrontando cinema diversi, i prezzi più alti non corrispondono a sale più vuote: i cinema più cari sono anche i più pieni. È probabile che entrambe le cose dipendano dalle caratteristiche del cinema (dimensione, posizione, qualità), non dal prezzo in sé.
+- I cinema meno pieni sono già i più economici: il prezzo non sembra essere la causa della loro bassa occupazione.
+- A parità di cinema, invece, il prezzo ha un effetto forte: con lo sconto del martedì il pubblico aumenta di molto (vedi inizio analisi).
+
+### Possibili azioni
+- Evitare riduzioni di prezzo permanenti nei cinema poco pieni.
+- Valutare promozioni mirate nei giorni più deboli (domenica e lunedì), sul modello dello sconto del martedì.
+
+### Limiti
+- La correlazione non implica una relazione di causa: il dataset non contiene le caratteristiche dei cinema (dimensione, posizione, servizi) che probabilmente spiegano il prezzo.
