@@ -81,13 +81,6 @@ Metrica: occupazione ponderata = biglietti venduti / capienza × 100, calcolata 
 ###  incasso e occupazione 
 Metriche: incasso medio giornaliero e occupazione ponderata. Confine tra "alto" e "basso": mediana (circa 10,3 milioni al giorno di incasso; 11,4% di occupazione). Inclusi 233 cinema con almeno 30 giorni di attività.
 
-| Gruppo | Incasso | Occupazione | Cinema |
-|--------|---------|-------------|--------|
-| Punti di forza | alto | alta | 86 |
-| Potenziale non sfruttato | alto | bassa | 31 |
-| Piccoli ma pieni | basso | alta | 31 |
-| Da analizzare | basso | bassa | 85 |
-
 - Più di due terzi dei cinema sono nei due gruppi "coerenti": incasso e occupazione vanno quasi sempre insieme. I cinema che incassano di più sono anche quelli che riempiono meglio le sale.
 - Nessuno dei primi 10 cinema per incasso è nel gruppo "Potenziale non sfruttato".
 - Il gruppo "Potenziale non sfruttato" è formato soprattutto da cinema di media grandezza (circa 12–40 milioni al giorno), con molte proiezioni (tipicamente 11–24 al giorno) e occupazione tra il 5% e l'11%. I casi più marcati: 88 (19 proiezioni al giorno, 3,5%), 162 (3,6%), 33 (4,6%), 144 e 56 (oltre 21 proiezioni, meno del 7%).
@@ -103,13 +96,6 @@ Metriche: incasso medio giornaliero e occupazione ponderata. Confine tra "alto" 
 
 ##  Il prezzo del biglietto influenza il riempimento delle sale?
 
-| Fascia | Prezzo medio | Occupazione media | Occupazione mediana |
-|--------|--------------|-------------------|---------------------|
-| 1 (più economica) | circa 41.000 | 11,0% | 9,8% |
-| 2 | circa 54.000 | 11,5% | 8,1% |
-| 3 | circa 65.000 | 14,1% | 10,4% |
-| 4 (più cara) | circa 96.000 | 22,6% | 20,4% |
-
 - Correlazione tra prezzo medio e occupazione: +0,48 (relazione positiva moderata).
 - La relazione non è graduale: le fasce 1-3 hanno occupazioni simili, mentre il quarto di cinema più cari ha un'occupazione circa doppia rispetto agli altri.
 
@@ -124,3 +110,26 @@ Metriche: incasso medio giornaliero e occupazione ponderata. Confine tra "alto" 
 
 ### Limiti
 - La correlazione non implica una relazione di causa: il dataset non contiene le caratteristiche dei cinema (dimensione, posizione, servizi) che probabilmente spiegano il prezzo.
+
+## Come calano le vendite di un film dopo l'uscita?
+
+(Data di uscita approssimata con il primo giorno di vendita nei dati. Esclusi i film comparsi nella prima settimana di dati (14-20 marzo). Film analizzati: 40.)
+
+- Il picco di vendite non è nella settimana di uscita: la 2°settimana un film vende in mediana il 132% della prima, la 3° il 113%.
+- Dalla settimana 4 inizia il calo. Valori mediani rispetto alla settimana 1: sotto il 50% alla settimana 6, sotto il 20% alla settimana 7, sotto il 10% alla settimana 10.
+- Media e mediana divergono dalla settimana 4 -> pochi film mantengono vendite alte molto più a lungo degli altri.
+- Circa metà dei film (19 su 40) è ancora presente nei dati alla settimana 12.
+
+### Interpretazione
+- Il picco ritardato può dipendere da uscite graduali (il film si allarga a più cinema nelle prime settimane), dal passaparola degli spettatori, o dall'approssimazione della data di uscita (anteprime, ecc..).
+
+### Possibili azioni
+- Non ridurre le proiezioni di un film nelle prime settimane: il picco arriva dopo l'uscita.
+- La maggior parte dei film può essere sostituita dopo 8-10 settimane senza perdite significative.
+- Per i film che resistono più a lungo, decidere in base alle vendite settimanali rispetto al picco, invece che con una regola fissa.
+
+### Limiti
+- La data di uscita non è presente nel dataset ed è approssimata.
+- La durata in sala è sottostimata per i film usciti verso la fine del periodo (i dati si interrompono il 4 novembre).
+- Dalla settimana 17 i film rimasti sono meno di 10: i valori non sono interpretabili.
+- Le settimane che contengono giorni mancanti (es. 4 e 6 giugno, 19 e 20 settembre) possono risultare più basse.
